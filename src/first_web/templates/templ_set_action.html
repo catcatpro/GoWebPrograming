@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置动作</title>
+</head>
+<body>
+    <div>The dot is {{ . }}</div>
+    <div>
+        <!-- {{ with "world" }}
+        Now the dot is set to {{ . }}
+        {{ end }} -->
+        {{ with ""}}
+        Now the dot is set to {{ . }}
+        {{ else }}
+        The dot is still {{ . }}
+        {{ end }}
+    </div>
+
+    <div>The dot is {{ . }}</div>
+
+    <div>The dot is {{ . }} again</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">
+    <script src="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container m-12" style="margin-top: 24px;margin-bottom: 24px;">
+        <div class="col-md-6">
+            <img src="data:image/jpg;base64,{{ .original }}" style="width: 100%;" alt="">
+            <div class="lead">Original</div>
+        </div>
+        <div class="col-md-6">
+            <img src="data:image/jpg;base64,{{ .mosaic }}" style="width: 100%;" alt="">
+            <div class="lead">{{ .duration }}</div>
+        </div>
+        <div class="col-md-12">
+            <a href="/" class="btn btn-lg btn-info">go back</a>
+        </div>
+    </div>
+</body>
+</html>
